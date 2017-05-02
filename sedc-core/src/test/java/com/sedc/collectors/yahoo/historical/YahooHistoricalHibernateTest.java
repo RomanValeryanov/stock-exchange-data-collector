@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.batch.core.BatchStatus;
@@ -23,6 +24,7 @@ import java.math.BigInteger;
 import java.time.LocalDate;
 import java.util.List;
 
+@Ignore
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/spring/batch/jobs/yahoo-historical-load-hibernate-job-test.xml")
 public class YahooHistoricalHibernateTest {
