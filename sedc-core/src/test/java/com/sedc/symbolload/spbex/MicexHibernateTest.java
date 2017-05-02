@@ -1,4 +1,4 @@
-package com.sedc.symbolload.micex;
+package com.sedc.symbolload.spbex;
 
 import com.sedc.core.model.Exchange;
 import com.sedc.core.model.Symbol;
@@ -8,6 +8,7 @@ import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.batch.core.BatchStatus;
@@ -19,6 +20,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
+@Ignore
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/spring/batch/jobs/symbol-load-micex-file-job-test.xml")
 public class MicexHibernateTest {
