@@ -4,10 +4,7 @@ import com.sedc.core.ListResourceItemReader;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.type.StandardBasicTypes;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.rules.TestName;
 import org.junit.runner.RunWith;
 import org.springframework.batch.core.ExitStatus;
@@ -175,6 +172,7 @@ public class YahooXchangeTestCase {
         Assert.assertEquals("Empty field, should not pass", ExitStatus.FAILED.getExitCode(), jobExecution.getExitStatus().getExitCode());
     }
 
+    @Ignore
     @Test
     public void testCaseSnapshotPositive() throws Exception {
         JobExecution jobExecution = launchStepFor("" +

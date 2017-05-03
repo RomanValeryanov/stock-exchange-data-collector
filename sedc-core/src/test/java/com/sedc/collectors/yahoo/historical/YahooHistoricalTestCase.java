@@ -6,10 +6,7 @@ import com.sedc.core.model.SourceCenterEngineInstance;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.type.StandardBasicTypes;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.rules.TestName;
 import org.junit.runner.RunWith;
 import org.springframework.batch.core.ExitStatus;
@@ -181,6 +178,7 @@ public class YahooHistoricalTestCase {
         Assert.assertEquals("Empty field, should not pass", c, flag);
     }
 
+    @Ignore
     @Test
     public void testCaseSnapshotPositive() throws Exception {
         JobExecution jobExecution = launchStepFor("" +

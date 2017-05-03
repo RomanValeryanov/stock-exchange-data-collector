@@ -179,6 +179,7 @@ public class YahooQuoteTestCase {
         Assert.assertEquals("Empty field", c, flag);
     }
 
+    @Ignore
     @Test
     public void testCaseSnapshotPositive() throws Exception {
         JobExecution jobExecution = launchStepFor("" +
