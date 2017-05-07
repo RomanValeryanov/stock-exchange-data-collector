@@ -199,7 +199,7 @@ public class YahooHistoricalTestCase {
                 " AND Sym_Id = (select s.sym_id from symbol s where s.name = :symbol)" +
                 " AND scei_id = :scei")
                 .setString("symbol", "GAZP")
-                .setBigDecimal("scei", sourceCenterEngineInstance.getId())
+                .setBigDecimal("scei", sourceCenterEngineInstance.getI())
                 .uniqueResult();
         session.close();
         Assert.assertEquals("Count does not match", 1, count.intValue());
